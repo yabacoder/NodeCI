@@ -44,7 +44,7 @@ describe("When logged in ", async () => {
 			const title = await page.getContentsOf(".card-title");
 			const content = await page.getContentsOf("p");
 
-			expect(title).toEqual("My test title");
+			expect(title).toEqual("My test titl");
 			expect(content).toEqual("My test content");
 		});
 	});
