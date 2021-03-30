@@ -31,12 +31,12 @@ class CustomPage {
 		await this.page.setCookie({
 			name: "session",
 			value: session,
-			domain: "http://localhost:3000",
+			domain: "localhost:3000",
 		});
 		await this.page.setCookie({
 			name: "session.sig",
 			value: sig,
-			domain: "http://localhost:3000",
+			domain: "localhost:3000",
 		});
 		await this.page.goto("http://localhost:3000/blogs");
 		await this.page.waitFor('a[href="/auth/logout"]');
